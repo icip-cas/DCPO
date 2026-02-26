@@ -1,7 +1,7 @@
 # 🚀 DCPO
 
 This repository contains the official implementation of the paper:  
-**C²GSPG: Confidence-Calibrated Group Sequence Policy Gradient towards Self-Aware Reasoning.**
+**Decoupling Reasoning and Confidence:Resurrecting Calibration in Reinforcement Learning from Verifiable Rewards**
 
 ## Environment Setup
 

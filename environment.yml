@@ -252,4 +252,3 @@ dependencies:
       - xxhash==3.5.0
       - yarl==1.20.0
       - zipp==3.22.0
-prefix: /ceph_home/mazhengzhao2024/miniconda3/envs/MATH

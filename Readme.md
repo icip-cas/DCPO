@@ -86,19 +86,26 @@ bash examples/Qwen3-8B.sh
 
 ## Evaluating Metrics
 
-To compute evaluation metrics such as **Accuracy**, **Expected Calibration Error (ECE)**, **Brier Score (BS)** and **Positive Calibration Error (PCE)**, deploy a vllm service of your model, 
+To compute evaluation metrics such as **Accuracy**, **Expected Calibration Error (ECE)**, **Brier Score (BS)** and **Positive Calibration Error (PCE)**
+
+Deploy a vllm service of your model
+
+```bash
+python -m vllm.entrypoints.openai.api_server \
+    --model models/Qwen3-8B \
+    --tensor-parallel-size 1 \
+    --dtype float16 \
+    --max-model-len 8192 \
+    --port 8000 
+```
+
+identify your model name and service url in examples/eval.sh and run:
 
 ```bash
 bash examples/eval.sh
 ```
 
-identify your model name and service url and run:
-
-```bash
-bash examples/eval.sh
-```
-
-The script will log output in folder logs/$model_name/ and plot a calibration curve in Figs/{model_name}.
+The script will log output in folder logs/model_name/ and plot calibration curves in Figs/model_name.
 
 ---
 ## 🙏 Acknowledgements

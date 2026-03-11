@@ -59,7 +59,7 @@ def token_reward_func(prompt, response, tokenizer):
 
     return conf, conf_token_pos
 
-class ConfidenceRewardManager:
+class HybridRewardManager:
     def __init__(self, tokenizer, num_examine, compute_score = None, reward_fn_key="data_source", seperate_confidence = True)->None:
         self.tokenizer = tokenizer
         self.num_examine = num_examine

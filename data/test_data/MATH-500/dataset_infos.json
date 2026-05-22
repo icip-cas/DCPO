@@ -1,0 +1,1 @@
+{"default": {"features": {"problem": {"_type": "Value"}, "solution": {"_type": "Value"}, "answer": {"_type": "Value"}, "subject": {"_type": "Value"}, "level": {"_type": "Value"}, "unique_id": {"_type": "Value"}}, "splits": {"test": {"name": "test", "dataset_name": "MATH-500"}}}}

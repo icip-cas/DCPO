@@ -2,12 +2,7 @@ set -x
 export PYTHONHASHSEED=0
 export RAY_memory_monitor_refresh_ms=0
 
-gsm8k_test_path=data/test_data/gsm8k_test.parquet
-math_test_path=data/test_data/math_500.parquet
-amc23_test_path=data/test_data/amc23_repeated_8_times.parquet
 aime24_test_path=data/test_data/aime24_repeated_8_times.parquet
-minerva_test_path=data/test_data/minerva_math.parquet
-olympiadbench_test_path=data/test_data/olympiadbench.parquet
 
 deepscaler_uniform_train_path=data/deepscaler_uniform_train_with_confidence.parquet
 
